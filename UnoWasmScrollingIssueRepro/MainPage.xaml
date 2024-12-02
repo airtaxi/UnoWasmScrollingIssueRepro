@@ -1,0 +1,74 @@
+﻿<Page
+    x:Class="UnoWasmScrollingIssueRepro.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UnoWasmScrollingIssueRepro"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <ScrollViewer>
+            <ItemsRepeater x:Name="TestItemRepeater" Loaded="OnLoaded">
+                <ItemsRepeater.Layout>
+                    <StackLayout Spacing="8" />
+                </ItemsRepeater.Layout>
+                <ItemsRepeater.ItemTemplate>
+                    <DataTemplate x:DataType="local:TestViewModel">
+                        <StackPanel
+                            Padding="8,0,8,0"
+                            Orientation="Horizontal"
+                            Spacing="4">
+                            <Image
+                                Width="30"
+                                Height="30"
+                                Source="ms-appx:///Assets/Icon.png" />
+                            <TextBlock Text="{x:Bind TestText, Mode=OneWay}" />
+                            <Image
+                                Width="30"
+                                Height="30"
+                                Source="ms-appx:///Assets/Icon.png" />
+                            <Image
+                                Width="30"
+                                Height="30"
+                                Source="ms-appx:///Assets/Icon.png" />
+                            <Image
+                                Width="30"
+                                Height="30"
+                                Source="ms-appx:///Assets/Icon.png" />
+                            <Image
+                                Width="30"
+                                Height="30"
+                                Source="ms-appx:///Assets/Icon.png" />
+                            <Image
+                                Width="30"
+                                Height="30"
+                                Source="ms-appx:///Assets/Icon.png" />
+                            <Image
+                                Width="30"
+                                Height="30"
+                                Source="ms-appx:///Assets/Icon.png" />
+                            <Image
+                                Width="30"
+                                Height="30"
+                                Source="ms-appx:///Assets/Icon.png" />
+                            <Image
+                                Width="30"
+                                Height="30"
+                                Source="ms-appx:///Assets/Icon.png" />
+                            <Image
+                                Width="30"
+                                Height="30"
+                                Source="ms-appx:///Assets/Icon.png" />
+                            <Image
+                                Width="30"
+                                Height="30"
+                                Source="ms-appx:///Assets/Icon.png" />
+                            <Image
+                                Width="30"
+                                Height="30"
+                                Source="ms-appx:///Assets/Icon.png" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsRepeater.ItemTemplate>
+            </ItemsRepeater>
+        </ScrollViewer>
+    </Grid>
+</Page>

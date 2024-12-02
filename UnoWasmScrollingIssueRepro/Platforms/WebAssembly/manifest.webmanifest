@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "UnoWasmScrollingIssueRepro",
+  "display": "standalone",
+  "name": "UnoWasmScrollingIssueRepro",
+  "short_name": "UnoWasmScrollingIssueRepro",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}
